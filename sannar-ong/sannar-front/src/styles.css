@@ -1,0 +1,297 @@
+html {
+  font-size: 100%; /* 16px por defecto */
+  line-height: 1.5; /* Altura de línea base */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evitar scroll lateral */
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Encabezados y párrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1rem 0;
+}
+
+/* Estilos generales (Móvil) */
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 1.625rem;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.4;
+  }
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  h6 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  h4 {
+    font-size: 1.625rem;
+    line-height: 1.3;
+  }
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  h6 {
+    font-size: 1.375rem;
+    line-height: 1.4;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Light Mode */
+:root {
+  --color-primary: #88c6af; /* Color principal 1 */
+  --color-secondary: #3d5b51; /* Color principal 2 */
+  --background-color: #f7f7f7;
+  --text-primary: #3d5b51; /* Ajustado para mejor legibilidad con los colores principales */
+  --text-secondary: #6d9e8b; /* Ajustado para mantener un buen contraste */
+  --border-color: #e0e0e0;
+  --button-hover-primary: #6d9e8b; /* Un tono más oscuro del color principal 1 */
+  --link-hover-primary: #2b8c59; /* Manteniendo el contraste */
+  --entry-animation: -20px;
+  --cover-animation: 20px;
+}
+
+/* Dark Mode */
+:root.dark-mode {
+  --color-primary: #88c6af; /* Color principal 1 */
+  --color-secondary: #3d5b51; /* Color principal 2 */
+  --background-color: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #bbbbbb;
+  --border-color: #23a96e; /* Ajustado para coincidir mejor con los colores principales */
+  --button-hover-primary: #66b26e; /* Un tono más oscuro del color secundario */
+  --link-hover-primary: #88c28a; /* Manteniendo la consistencia con el color principal 1 */
+  --entry-animation: -20px;
+  --cover-animation: 20px;
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --entry-animation: -100px;
+    --cover-animation: 100px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: "Onest Variable", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+p strong {
+  color: #23a96e;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-primary);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-primary);
+}
+
+.border {
+  border-color: var(--border-color);
+}
+
+.text__glowing {
+  transition: text-shadow 0.3s ease;
+}
+
+.text__glowing:hover {
+  text-shadow: 1px 1px 20px #58ff49;
+}
+
+#offcanvasDarkNavbar {
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 500px;
+}
+
+@keyframes blur {
+  to {
+    box-shadow: 0px 5px 50px -5px rgba(0, 0, 0, 0.062),
+      0px 0px 0 1px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.mdc-notched-outline__notch {
+  border-right: none;
+  border-left: none;
+}
+
+::view-transition-new(root) {
+  animation-name: -ua-view-transition-fade-in, -ua-mix-blend-mode-plus-lighter;
+  animation-duration: 100ms;
+}
+::view-transition-old(root) {
+  animation-name: -ua-view-transition-fade-out, -ua-mix-blend-mode-plus-lighter;
+  animation-duration: 100ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Comienza con opacidad nula (fade out) */
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1; /* Opacidad completa (fade in) al final de la animación */
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Comienza con opacidad completa (fade in) */
+  }
+  100% {
+    opacity: 0; /* Opacidad nula (fade out) al final de la animación */
+  }
+}

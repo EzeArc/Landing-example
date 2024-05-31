@@ -1,0 +1,27 @@
+<div class="container-bg">
+  <section class="section-style">
+    <div class="text-center">
+      <h2 class="heading-style">Inicio de Sesión</h2>
+      <p class="paragraph-style">No tienes cuenta? Registrate aquí</p>
+      <button mat-flat-button color="accent" routerLink="/register">
+        Registrate
+      </button>
+    </div>
+    <form action="" class="form-style">
+      <mat-form-field appearance="outline">
+        <mat-label>Usuario</mat-label>
+        <input matInput placeholder="Ingrese su usuario" />
+        <mat-icon matSuffix>account_circle</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="Ingrese su Contraseña" />
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+      <button mat-flat-button color="accent" (click)="clickSingUp()">
+        Iniciar sesión
+      </button>
+    </form>
+  </section>
+</div>

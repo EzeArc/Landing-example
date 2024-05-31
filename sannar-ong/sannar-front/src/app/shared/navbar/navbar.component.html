@@ -1,0 +1,118 @@
+<nav class="navbar navbar-dark" id="header-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><app-sannar-logo class="sannar-logo" /></a>
+    <div class="d-flex">
+      <ul class="navbar-nav text-center ul-nav-items">
+        <li class="nav-item">
+          <a class="nav-link active text__glowing" aria-current="page" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text__glowing" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text__glowing" href="/about"> About </a>
+          <!-- 
+            clase- dropdown(l14) & dropdown-toggle (l16) role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"
+            <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Asociate</a></li>
+            <li><a class="dropdown-item" href="#">REPROCANN</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Sannar.ong</a></li>
+          </ul> -->
+        </li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          hidden
+        />
+        <button class="icons" type="submit">
+          <img src="../../../assets/icons/search.svg" alt="search-icon" />
+        </button>
+      </form>
+      <a href="#" class="icons"
+        ><img src="../../../assets/icons/user.svg" alt="user-icon"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          <a class="navbar-brand" href="/"
+            ><app-sannar-logo class="sannar-logo"
+          /></a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="icons" type="submit">
+            <img src="../../../assets/icons/search.svg" alt="search-icon" />
+          </button>
+        </form>
+        <ul class="navbar-nav text-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/about"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Asociate</a></li>
+              <li><a class="dropdown-item" href="#">REPROCANN</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sannar.ong</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

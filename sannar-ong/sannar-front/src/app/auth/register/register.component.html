@@ -1,0 +1,74 @@
+<div class="container-bg">
+  <section class="section-style">
+    <div class="text-center">
+      <h2 class="heading-style">Bienvenido</h2>
+      <p class="paragraph-style">Ya tienes cuenta? Ingresa aquí!</p>
+      <button mat-flat-button color="accent" routerLink="/register">
+        Sign In
+      </button>
+    </div>
+    <form
+      class="form-style"
+      [formGroup]="formGroup"
+      (ngSubmit)="clickRegister()"
+    >
+      <mat-form-field appearance="outline">
+        <mat-label>Nombres </mat-label>
+        <input matInput type="text" formControlName="names" class="my-input" />
+        @if(firtsField.hasError('required')){
+        <mat-error> Ingrese sus nombres </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Apellidos</mat-label>
+        <input matInput type="text" formControlName="lastName" />
+        @if(lastNameField.hasError('required')){
+        <mat-error> Ingrese sus apellidos </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>E-mail</mat-label>
+        <input matInput type="email" formControlName="email" />
+        @if(emailField.hasError('required')){
+        <mat-error>Ingrese su e-mail </mat-error>
+        } @if(emailField.hasError('email')){
+        <mat-error> Ingrese un e-mail valido </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" formControlName="password" />
+        @if(passwordField.hasError('customPasswordValidator')){
+        <mat-error>
+          La contraseña debe tener al menos una mayúscula, minúscula, simbolo,
+          número y mayor a 8 caracteres
+        </mat-error>
+        } @if(passwordField.hasError('required')){
+        <mat-error> Ingrese una contraseña </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Repetir contraseña</mat-label>
+        <input
+          matInput
+          type="password"
+          formControlName="confirmPassword"
+          [errorStateMatcher]="passwordStateMatcher"
+        />
+        @if(confirmPasswordField.hasError('required')){
+        <mat-error> Ingrese una contraseña </mat-error>
+        } @if(formGroup.hasError('crossConfirmPasswordError')){
+        <mat-error> La contraseña no coincide, verifique </mat-error>
+        }
+      </mat-form-field>
+
+      <button mat-flat-button color="accent" (click)="clickRegister()">
+        Registrarse
+      </button>
+    </form>
+  </section>
+</div>

@@ -1,0 +1,38 @@
+.info-section {
+  margin-inline: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  max-width: 70ch;
+  text-wrap: pretty;
+  padding-inline: 24px;
+  text-align: left;
+}
+.sannar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.logo-sannar {
+  height: 100px;
+  border-radius: 100%;
+}
+
+h1 {
+  color: #62917f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+strong {
+  color: #6d9e8b;
+}
+
+p {
+  color: #1e1e1e;
+}

@@ -1,0 +1,69 @@
+.container-bg {
+  background-image: url(../../../assets/images/sannar/roberto-valdivia-HrRm_V-V0sM-unsplash.jpg);
+  background-size: cover;
+  backdrop-filter: blur(4px) saturate(120%);
+  background-color: rgba(0, 0, 0, 0.178);
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.section-style {
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-center {
+  text-align: center;
+  padding-right: 32px;
+}
+
+.heading-style {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 28px;
+  margin-right: 28px;
+  color: white;
+}
+
+.paragraph-style {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+::ng-deep .mdc-notched-outline__leading {
+  border-color: rgba(255, 255, 255, 0.705) !important;
+}
+::ng-deep .mdc-notched-outline__notch {
+  border-color: rgba(255, 255, 255, 0.664) !important;
+}
+::ng-deep .mdc-notched-outline__trailing {
+  border-color: rgba(255, 255, 255, 0.644) !important;
+}
+
+mat-label {
+  color: #ffffffe3;
+}

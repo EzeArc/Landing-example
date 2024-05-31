@@ -1,0 +1,135 @@
+nav {
+  background-color: #86c4ad;
+  border-color: rgb(229, 231, 235);
+  z-index: 20;
+}
+
+.sannar-logo {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.sannar-logo:hover {
+  transform: scale(1.1);
+}
+
+.ul-nav-items {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-nav-items > li {
+  padding-inline: 14px;
+}
+
+/* Hover: scale ul-li*/
+.navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1);
+  color: #428b70;
+  font-weight: 800;
+}
+
+.dropdown-item {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.1);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  padding-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.icons img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icons:hover img {
+  filter: invert(20%) sepia(40%) saturate(1000%) hue-rotate(90deg)
+    brightness(46%) contrast(95%);
+  transform: scale(1.1);
+}
+
+/* Estilos Nav off-canvass --> Desplegable*/
+.offcanvas {
+  background-color: #86c4ad;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.offcanvas-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 0.25em;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background-color: rgba(0, 128, 0, 0.2);
+  border-color: rgba(0, 128, 0, 0.7);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.5);
+}
+
+@media only screen and (max-width: 650px) {
+  .ul-nav-items {
+    display: none;
+  }
+
+  .icons {
+    padding: 3px;
+  }
+
+  .offcanvas-body {
+    gap: 1rem;
+  }
+}
