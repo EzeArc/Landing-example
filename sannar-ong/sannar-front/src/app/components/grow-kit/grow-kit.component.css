@@ -1,4 +1,4 @@
-.press-kit {
+.grow-kit {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   background: linear-gradient(to right, #71b280, #134e5e);
 }
 
-.press-kit-title {
+.grow-kit-title {
   z-index: 20;
   color: #fff;
   font-size: 2.5rem;
@@ -20,33 +20,33 @@
   text-shadow: 2px 2px 2px #477445;
 }
 
-.press-kit-content {
+.grow-kit-content {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
 @media (min-width: 1024px) {
-  .press-kit-content {
+  .grow-kit-content {
     flex-direction: row;
     gap: 2rem;
   }
 }
 
-.press-kit-item {
+.grow-kit-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.press-kit-subtitle {
+.grow-kit-subtitle {
   color: #ffffff81;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.press-kit-link {
+.grow-kit-link {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,14 +61,14 @@
   text-decoration: none;
 }
 
-.press-kit-image {
+.grow-kit-image {
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   transition: transform 0.3s;
   object-fit: contain;
 }
 
-.press-kit-image-hover {
+.grow-kit-image-hover {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -81,15 +81,15 @@
   transition: opacity 0.3s;
 }
 
-.press-kit-link:hover .press-kit-image {
+.grow-kit-link:hover .grow-kit-image {
   transform: scale(1.05);
 }
 
-.press-kit-link:hover .press-kit-image-hover {
+.grow-kit-link:hover .grow-kit-image-hover {
   opacity: 0.4;
 }
 
-.press-kit-download {
+.grow-kit-download {
   color: #ffffff81;
   border: 2px solid #ffffffab;
   border-radius: 9999px;
@@ -97,14 +97,14 @@
 }
 
 @media (max-width: 768px) {
-  .press-kit-title {
+  .grow-kit-title {
     font-size: 1.8rem;
     text-wrap: pretty;
   }
-  .press-kit-subtitle {
+  .grow-kit-subtitle {
     font-size: 1.4rem;
   }
-  .press-kit-download {
+  .grow-kit-download {
     padding: 0.5rem 0.8rem;
   }
 }
