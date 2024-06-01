@@ -1,0 +1,89 @@
+.container-bg {
+  position: relative; /* Posiciona el contenedor principal relativamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-top: 7rem;
+  padding: 6rem 6rem;
+}
+
+.walking-container {
+  position: absolute; /* Posiciona el contenedor de la caminata absolutamente */
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Asegura que los eventos del mouse no interfieran con el formulario */
+  z-index: 1; /* Asegura que el contenedor de la caminata esté detrás del formulario */
+}
+
+.section-style {
+  position: relative; /* Posiciona la sección del formulario relativamente */
+  height: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2; /* Asegura que el formulario esté delante del contenedor de la caminata */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading-style {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  padding-bottom: 1rem;
+  margin-left: 28px;
+  margin-right: 28px;
+  color: #2fa35f;
+}
+
+.paragraph-style {
+  color: #2fa35f94;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #222;
+}
+
+::ng-deep .mdc-notched-outline__leading {
+  border-color: rgba(50, 50, 50, 0.2) !important;
+}
+::ng-deep .mdc-notched-outline__notch {
+  border-color: rgba(50, 50, 50, 0.2) !important;
+}
+::ng-deep .mdc-notched-outline__trailing {
+  border-color: rgba(50, 50, 50, 0.2) !important;
+}
+
+::ng-deep .mdc-text-field__input {
+  color: #222 !important;
+}
+
+mat-label {
+  color: #2221218c;
+}
+
+mat-icon {
+  color: #2fa35f;
+}

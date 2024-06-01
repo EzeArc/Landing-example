@@ -1,0 +1,18 @@
+.main-faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Espacio entre los grupos de FAQ */
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  perspective: 500px;
+  padding: 1rem 1rem; /* Asegura un leve espacio en los bordes de la pantalla */
+}
+
+@media (max-width: 768px) {
+  .main-faq {
+    flex-direction: column;
+    padding: 0 1rem; /* Asegura un leve espacio en los bordes de la pantalla */
+  }
+}

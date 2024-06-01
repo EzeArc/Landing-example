@@ -1,0 +1,104 @@
+/* Estilo para la sección que contiene la animación */
+.animation-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Ajusta la altura de la sección según sea necesario */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.walking-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para las imágenes que caminan */
+.walking-image-1,
+.walking-image-2,
+.walking-image-3,
+.walking-image-4,
+.walking-image-5,
+.walking-image-6 {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: walk 6s linear infinite;
+  animation: walk 6s linear infinite;
+}
+
+.walking-image-1 {
+  left: 75px;
+  top: 160px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.walking-image-2 {
+  left: 360px;
+  top: 30px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.walking-image-3 {
+  left: 610px;
+  top: 210px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.walking-image-4 {
+  left: 890px;
+  top: 125px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.walking-image-5 {
+  left: 1075px;
+  top: 20px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.walking-image-6 {
+  left: 1250px;
+  top: 180px; /* Ajusta la posición vertical */
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.walking-image-1 img,
+.walking-image-2 img,
+.walking-image-3 img,
+.walking-image-4 img,
+.walking-image-5 img,
+.walking-image-6 img {
+  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+/* Animación para caminar */
+@-webkit-keyframes walk {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes walk {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

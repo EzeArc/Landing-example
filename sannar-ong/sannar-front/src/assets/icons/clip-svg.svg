@@ -1,0 +1,19 @@
+  <svg
+    width="100%"
+    height="100"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute"
+  >
+    <defs>
+      <clipPath id="theSVGPath" clipPathUnits="objectBoundingBox">
+        <rect x="0" y="0.01" width="0.07" height="1" />
+        <rect x="0.145" y="0" width="0.07" height="0.9" />
+        <rect x="0.29" y="0.04" width="0.07" height="0.8" />
+        <rect x="0.435" y="0" width="0.07" height="0.7" />
+        <rect x="0.58" y="0.04" width="0.07" height="0.7" />
+        <rect x="0.72" y="0" width="0.07" height="0.8" />
+        <rect x="0.83" y="0.02" width="0.07" height="0.9" />
+        <rect x="0.94" y="0" width="0.07" height="1" />
+      </clipPath>
+    </defs>
+  </svg>

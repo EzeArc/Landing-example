@@ -1,0 +1,76 @@
+.faq-section {
+  width: 100%; /* Hace que el ancho ocupe todo el contenedor padre */
+  transform-style: preserve-3d;
+  text-align: center;
+  box-sizing: border-box; /* Asegura que el padding no incremente el ancho total */
+  transition: transform 0.3s ease-in-out; /* Transición suave para el hover */
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-wrap: pretty;
+  letter-spacing: 0.2rem;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px #00ff6a8c;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.accordion {
+  filter: drop-shadow(3px 3px 8px #00000077);
+}
+.accordion-button {
+  font-weight: 600;
+  color: #ffffff;
+  text-wrap: pretty;
+  background-color: #0b674e;
+}
+
+.accordion-item {
+  background-color: #00fc6928;
+}
+
+.accordion-body {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  text-align: left;
+  text-wrap: pretty;
+}
+.faq-section:first-child {
+  padding-left: 2rem; /* Ajusta según sea necesario */
+  margin-left: 0; /* Para evitar margen adicional en el primer hijo */
+}
+
+.faq-section:last-child {
+  padding-right: 2rem; /* Ajusta según sea necesario */
+  margin-right: 0; /* Para evitar margen adicional en el último hijo */
+}
+
+.faq-section:hover {
+  transform: scale(1.1);
+  z-index: 1; /* Asegura que el elemento esté por delante en hover */
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    margin: 1rem 0; /* Ajuste de margen para separación vertical en móvil */
+    padding: 2rem 1rem; /* Ajusta el padding en móvil para consistencia */
+  }
+
+  .faq-section:first-child {
+    padding-left: 2rem; /* Mantiene el padding-left en móvil */
+    margin-left: 0;
+  }
+
+  .faq-section:last-child {
+    padding-right: 2rem; /* Mantiene el padding-right en móvil */
+    margin-right: 0;
+  }
+}
