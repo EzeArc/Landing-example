@@ -1,3 +1,12 @@
+## ToDo:
+
+- Corregir animación entre rutas (durante un breve momento se ve el footer)
+- Mejorar lazyload de imagenes. Optimizar para webp.
+- Corregir la primera aparición del video en la Home. La 1ra vez no se inicia el video.
+- Corregir mediaQuery de contact-page.
+- Mejorar tonalidades de color y bg-color en la sección FAQ.
+- Cambiar nombres de los ID´s entre los 2 faq-group para que no se desplieguen ambos.
+
 # SannarFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
