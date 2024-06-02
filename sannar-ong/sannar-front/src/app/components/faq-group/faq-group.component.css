@@ -1,16 +1,14 @@
 .faq-section {
-  width: 100%; /* Hace que el ancho ocupe todo el contenedor padre */
-  transform-style: preserve-3d;
+  width: 100%;
   text-align: center;
-  box-sizing: border-box; /* Asegura que el padding no incremente el ancho total */
-  transition: transform 0.3s ease-in-out; /* Transición suave para el hover */
+  box-sizing: border-box;
+  padding: 2rem;
 }
 
 .faq-title {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
-  text-wrap: pretty;
   letter-spacing: 0.2rem;
   background-color: #565656;
   color: transparent;
@@ -22,16 +20,44 @@
 
 .accordion {
   filter: drop-shadow(3px 3px 8px #00000077);
+  border: none;
 }
+
 .accordion-button {
   font-weight: 600;
   color: #ffffff;
-  text-wrap: pretty;
   background-color: #0b674e;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+.accordion-button::after {
+  color: #ffffff; /* Cambia el color del icono */
+  transition: color 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #0f9468; /* Cambia el color del icono cuando el acordeón está expandido */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0f9468;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00ff6a8c;
 }
 
 .accordion-item {
-  background-color: #00fc6928;
+  background-color: #00fc6911;
+  border: none;
+  margin-bottom: 1rem;
 }
 
 .accordion-body {
@@ -40,37 +66,27 @@
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+  padding: 1rem;
   text-align: left;
-  text-wrap: pretty;
-}
-.faq-section:first-child {
-  padding-left: 2rem; /* Ajusta según sea necesario */
-  margin-left: 0; /* Para evitar margen adicional en el primer hijo */
-}
-
-.faq-section:last-child {
-  padding-right: 2rem; /* Ajusta según sea necesario */
-  margin-right: 0; /* Para evitar margen adicional en el último hijo */
-}
-
-.faq-section:hover {
-  transform: scale(1.1);
-  z-index: 1; /* Asegura que el elemento esté por delante en hover */
 }
 
 @media (max-width: 768px) {
   .faq-section {
-    margin: 1rem 0; /* Ajuste de margen para separación vertical en móvil */
-    padding: 2rem 1rem; /* Ajusta el padding en móvil para consistencia */
+    padding: 2rem 1rem;
   }
 
-  .faq-section:first-child {
-    padding-left: 2rem; /* Mantiene el padding-left en móvil */
-    margin-left: 0;
+  .faq-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
-  .faq-section:last-child {
-    padding-right: 2rem; /* Mantiene el padding-right en móvil */
-    margin-right: 0;
+  .accordion-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .accordion-body {
+    font-size: 0.875rem;
+    padding: 0.75rem;
   }
 }
