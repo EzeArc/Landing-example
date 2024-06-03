@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as data from '../../../assets/data/content.json'
 
 @Component({
   selector: 'app-info-section',
@@ -9,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class InfoSectionComponent {
 
+  infoContent = data.HOME_PAGE.SECTIONS.find(section => section.TYPE === 'info')?.CONTENT.INFO_SECTION;
+  introTitle: any = this.infoContent?.INTRO_TITLE;
+  introDescription: any = this.infoContent?.INTRO_DESCRIPTION;
 }

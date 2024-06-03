@@ -1,92 +1,17 @@
 <section class="section">
-  <article class="article article-1">
+  @for (article of bentoContent; track $index;) {
+  <article class="article" [ngClass]="'article-' + $index">
+    <!-- Aquí van los estilos específicos para cada artículo -->
     <div class="gradient"></div>
     <div
-      class="background bg-color-1"
-      data-src="/mountain.webp"
-      style="
-        background-image: url('https://images.unsplash.com/photo-1627674360710-73b977e8d7ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      "
+      class="background"
+      [ngClass]="'bg-color-' + $index"
+      [style.background-image]="'url(' + article.BENTO_IMAGE + ')'"
     ></div>
     <div class="content">
-      <h2>Inventigamos el cannabis medicinal</h2>
-      <p>
-        Brindamos asesoramiento específico sobre el
-        <strong>uso terapéutico del cannabis</strong>
-        en las personas que requieran información como otras organizaciones
-        afines.
-      </p>
+      <h2>{{ article.BENTO_TITLE }}</h2>
+      <p [innerHTML]="article.BENTO_CONTENT"></p>
     </div>
   </article>
-  <article class="article article-2">
-    <div class="gradient"></div>
-    <div
-      class="background bg-color-2"
-      data-src="/grefg.webp"
-      style="
-        background-image: url('https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      "
-    ></div>
-    <div class="content">
-      <h2>¿Qué es el REPROCANN?</h2>
-      <p>
-        Es el
-        <strong
-          >Registro nacional de personas autorizadas al cultivo
-          controlado</strong
-        >
-        con fines medicinales y/o terapéuticos creado tras la sanción de la ley
-        N. º27.350 que
-        <strong
-          >regula el uso medicinal de la planta de cannabis y sus
-          derivados</strong
-        >.
-      </p>
-    </div>
-  </article>
-  <article class="article article-3">
-    <div class="gradient"></div>
-    <div
-      class="background bg-color-3"
-      data-src="/grefg.webp"
-      style="
-        background-image: url('https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      "
-    ></div>
-    <div class="content">
-      <h2>¿QUÉ SIGNIFICA FULL SPECTRUM?</h2>
-      <p>
-        El aceite
-        <strong
-          >contiene todos los componentes con acción terapéutica encontrados en
-          la planta</strong
-        >: cannabinoides, terpenos y flavonoides. Estos elementos interactúan
-        generando un
-        <strong
-          >efecto de sinergia, conocido como efecto séquito o entourage
-          effect</strong
-        >, que aumenta la eficacia del producto.
-      </p>
-    </div>
-  </article>
-  <article class="article article-4">
-    <div class="gradient"></div>
-    <div
-      class="background bg-color-4"
-      data-src="/laptop.webp"
-      style="
-        background-image: url('https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      "
-    ></div>
-    <div class="content">
-      <h2>SANNAR full spectrum</h2>
-      <p>
-        SANNAR es un producto elaborado a partir de
-        <strong>flores de Cannabis Sativa L.</strong>, cultivadas a partir de
-        plantas de genética controlada. Estas plantas se cultivan bajo estrictos
-        lineamientos de agricultura ecológica,
-        <strong>sin el uso de pesticidas ni fertilizantes</strong> sintéticos.
-      </p>
-    </div>
-  </article>
+  }
 </section>

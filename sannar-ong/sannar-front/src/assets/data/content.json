@@ -1,0 +1,156 @@
+{
+    "HOME_PAGE": {
+      "HERO_TITLE": "Acceso Seguro y Confiable al Cannabis Medicinal",
+      "HERO_SUBTITLE":"Transformando vidas con tratamientos naturales para la salud y el bienestar de humanos y animales",
+      "HERO_BUTTON": "Únete a nuestra comunidad",
+      "SECTIONS": [
+        {
+          "TYPE": "info",
+          "CONTENT": {
+            "INFO_SECTION": {
+              "INTRO_TITLE": "Bienvenidos/as<br/> a la Fundación SANNAR",
+              "INTRO_DESCRIPTION":
+              [
+                "En SANNAR, garantizamos productos de <strong>cannabis de alta calidad para uso medicinal</strong>, terapéutico y paliativo. Desde la fabricación de bioinsumos hasta la <strong>elaboración de aceites y derivados como cremas, cosméticos y comestibles</strong>, controlamos cada paso del proceso.",
+                "Nuestro equipo de profesionales ofrece <strong>asesoramiento especializado</strong> y apoyo a personas y organizaciones que buscan información sobre el uso terapéutico del cannabis."
+              ]                            
+            }
+          }
+        },
+        {
+          "TYPE": "bentoGrid",
+          "CONTENT": {
+            "BENTO_ITEMS": [
+              {
+                "BENTO_TITLE": "¿QUÉ SIGNIFICA FULL SPECTRUM?",
+                "BENTO_CONTENT": "El aceite<strong>contiene todos los componentes con acción terapéutica encontrados en la planta</strong>: cannabinoides, terpenos y flavonoides. Estos elementos interactúan generando un <strong>efecto de sinergia, conocido como efecto séquito o entourage effect</strong>, que aumenta la eficacia del producto.",
+                "BENTO_IMAGE": "https://images.unsplash.com/photo-1627674360710-73b977e8d7ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              },
+              {
+                "BENTO_TITLE": "¿Qué es el REPROCANN?",
+                "BENTO_CONTENT": "Es el <strong>Registro nacional de personas autorizadas al cultivo controlado</strong> con fines medicinales y/o terapéuticos creado tras la sanción de la ley N. º27.350 que <strong>regula el uso medicinal de la planta de cannabis y sus derivados</strong>.",
+                "BENTO_IMAGE": "https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              },
+              {
+                "BENTO_TITLE": "Inventigamos el cannabis medicinal",
+                "BENTO_CONTENT": "Brindamos asesoramiento específico sobre el <strong>uso terapéutico del cannabis</strong> en las personas que requieran información como otras organizaciones afines.",
+                "BENTO_IMAGE": "https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              },
+              {
+                "BENTO_TITLE": "SANNAR full spectrum",
+                "BENTO_CONTENT": "SANNAR es un producto elaborado a partir de <strong>flores de Cannabis Sativa L.</strong>, cultivadas a partir de plantas de genética controlada. Estas plantas se cultivan bajo estrictos lineamientos de agricultura ecológica, <strong>sin el uso de pesticidas ni fertilizantes</strong> sintéticos.",
+                "BENTO_IMAGE": "https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ABOUT_PAGE": {
+      "PAGE_TITLE": "About Us",
+      "PAGE_SUBTITLE": "",
+      "PAGE_BUTTON": "",
+      "SECTIONS": [
+        {
+          "TYPE": "container",
+          "CONTENT": [
+            {
+              "INTRO_TITLE": "¿Por qué Sannar ONG?",
+              "INTRO_DESCRIPTION":
+            [
+                "La Fundación Sannar ONG <strong>fomenta el cultivo y la producción de cannabis para uso medicinal</strong>, con un enfoque en la sostenibilidad y la salud. Nuestro objetivo es <strong>mejorar la calidad de vida de pacientes mediante terapias basadas en cannabis</strong>.",
+                "Trabajamos con expertos en botánica, medicina y derecho para asegurar prácticas de alta calidad y legalidad, promoviendo una mayor aceptación del cannabis medicinal.",
+                "Apoyamos a pequeños agricultores en prácticas agrícolas sostenibles, contribuyendo al desarrollo económico y social de las comunidades locales."
+            ],
+              "INTRO_IMAGE": "history.jpg"
+            },
+            {
+              "INTRO_TITLE": "Nuestro Compromiso con la Comunidad",
+              "INTRO_DESCRIPTION": [
+                  "Sannar ONG crea un <strong>impacto positivo en la comunidad a través de programas de apoyo y colaboración</strong>. Proporcionamos información y recursos sobre el uso medicinal del cannabis y trabajamos para eliminar el estigma asociado.",
+                  "Alianzas con instituciones académicas y de salud nos permiten participar en <strong>investigaciones innovadoras sobre el cannabis medicinal</strong>. Empoderamos a pacientes y familias con alternativas terapéuticas seguras y promovemos políticas públicas que faciliten el acceso al cannabis medicinal y protejan los derechos de los usuarios."
+              ],
+              "INTRO_IMAGE": "vision.jpg"
+            }
+          ]
+        },
+        {
+          "TYPE": "cards",
+          "CONTENT": [
+            {
+              "CARD_HEADER": "Que es una ONG?",
+              "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
+              "CARD_IMAGE": "team.jpg",
+              "CARD_BUTTON": "Conoce más"
+            },
+            {
+              "CARD_HEADER": "Qué significa REPROCANN?",
+              "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
+              "CARD_IMAGE": "awards.jpg",
+              "CARD_BUTTON": "Conoce más"
+            },
+            {
+              "CARD_HEADER": "Fumar / vapear",
+              "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
+              "CARD_IMAGE": "testimonials.jpg",
+              "CARD_BUTTON": "Conoce más"
+            }
+          ]
+        }
+      ]
+    },
+    "CONTACT_PAGE": {
+        "HERO_TITLE": "Contact Us",
+        "HERO_SUBTITLE": "",
+        "HERO_BUTTON": "",
+        "SECTIONS": [
+        {
+          "TYPE": "formIntro",
+          "CONTENT": {
+            "FORM_HEADER": "Contacta con nosotros!",
+            "FORM_SUBTITLE": "No dudes en consultarnos.",
+            "FORM_BUTTON": "Enviar mail"
+          }
+        },
+        {
+          "TYPE": "infoBubble",
+          "CONTENT": {
+            "BUBBLE_MESSAGE": "No olvides consultar la sección de",
+            "HREF_BUBBLE": "<a href='faq-section'>preguntas frecuentes</a>"
+          }
+        },
+        {
+          "TYPE": "faq",
+          "CONTENT": [
+            {
+              "FAQ_HEADER": "Acerca de Sannar ONG",
+              "QUESTIONS": [
+                {
+                  "QUESITON_TITLE": "¿Qué es una ONG?",
+                  "QUESTION_DESCRIPTION": "Una ONG es una organización no gubernamental que opera de manera independiente del gobierno y tiene como objetivo principal la promoción de causas sociales, ambientales, humanitarias, entre otras."
+                },
+                {
+                  "QUESITON_TITLE": "¿Como me hago socio de Sannar?",
+                  "QUESTION_DESCRIPTION": "Para hacerte socio de Sannar, puedes visitar nuestra página web y completar el formulario de inscripción. También puedes acercarte a nuestras oficinas y realizar el proceso en persona."
+                },
+                {
+                  "QUESITON_TITLE": "¿Qué beneficios me otorga?",
+                  "QUESTION_DESCRIPTION": "Al hacerte socio de Sannar, obtienes acceso a nuestros programas y servicios, descuentos en eventos y talleres, y la oportunidad de participar en actividades exclusivas para miembros."
+                },
+                {
+                  "QUESITON_TITLE": "¿Cuáles son los beneficios del Aceite Cannabico?",
+                  "QUESTION_DESCRIPTION": "El aceite cannábico puede proporcionar alivio para una variedad de condiciones médicas, incluyendo dolor crónico, ansiedad, y epilepsia. Es importante consultar con un profesional de la salud antes de comenzar su uso."
+                },
+                {
+                  "QUESITON_TITLE": "¿Qué es el REPROCANN?",
+                  "QUESTION_DESCRIPTION": "El REPROCANN es el Registro del Programa de Cannabis del Ministerio de Salud, que permite a los pacientes acceder legalmente a productos de cannabis para uso medicinal."
+                }
+
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
