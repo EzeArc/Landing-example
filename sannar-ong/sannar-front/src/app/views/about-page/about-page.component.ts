@@ -5,6 +5,7 @@ import { HeroImgComponent } from '../../components/hero-img/hero-img.component';
 import { WeedLoaderComponent } from '../../shared/weed-loader/weed-loader.component';
 import { GrowKitComponent } from '../../components/grow-kit/grow-kit.component';
 import { AboutUsInfoComponent } from '../../components/about-us-info/about-us-info.component';
+import * as data from '../../../assets/data/content.json'
 
 @Component({
   selector: 'app-about-page',
@@ -14,5 +15,7 @@ import { AboutUsInfoComponent } from '../../components/about-us-info/about-us-in
   styleUrl: './about-page.component.css'
 })
 export class AboutPageComponent {
+
+  title= data.ABOUT_PAGE.PAGE_TITLE;
 
 }

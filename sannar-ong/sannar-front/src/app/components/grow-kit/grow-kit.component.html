@@ -1,41 +1,21 @@
 <section class="grow-kit">
-  <h2 class="grow-kit-title">Beneficios de ser parte de Sannar ONG</h2>
+  <h2 class="grow-kit-title">{{ growSection.GROW_SECTION_HEADER }}</h2>
   <div class="grow-kit-content">
+    @for (growItem of growSection.GROW_KIT_ITEMS; track $index) {
     <article class="grow-kit-item">
-      <h3 class="grow-kit-subtitle">Aceite cannabico</h3>
+      <h3 class="grow-kit-subtitle">{{ growItem.GROW_KIT_ITEM_HEADER }}</h3>
       <a class="grow-kit-link" href="/contact">
         <img
-          src="../../../assets/images/sannar/icons8-medical-box-64.png"
+          [src]="growItem.GROW_KIT_ITEM_IMAGE"
           class="grow-kit-image"
           loading="lazy"
           alt="Medical Cannabis"
         />
-        <span class="grow-kit-download">Consultar</span>
+        <span class="grow-kit-download">{{
+          growItem.GROW_KIT_ITEM_BUTTON
+        }}</span>
       </a>
     </article>
-    <article class="grow-kit-item">
-      <h3 class="grow-kit-subtitle">Semillas</h3>
-      <a class="grow-kit-link" href="/contact">
-        <img
-          src="../../../assets/images/sannar/icons8-cannabis-64.png"
-          class="grow-kit-image"
-          loading="lazy"
-          alt="Cannabis flower"
-        />
-        <span class="grow-kit-download">Consultar</span>
-      </a>
-    </article>
-    <article class="grow-kit-item">
-      <h3 class="grow-kit-subtitle">Flores</h3>
-      <a class="grow-kit-link" href="/contact">
-        <img
-          src="../../../assets/images/sannar/icons8-cannabis-oil-64.png"
-          class="grow-kit-image"
-          loading="lazy"
-          alt="Cannabis Oil"
-        />
-        <span class="grow-kit-download">Consultar</span>
-      </a>
-    </article>
+    }
   </div>
 </section>
