@@ -2,19 +2,14 @@
 
 ## Tareas de Creación
 
-- [ ] Crear Data.ts para renderizar contenido mediante lógica.
-- [ ] Añadir funcionalidades dinámicas al contenido renderizado (@If / @For).
 - [ ] Crear rutas hijas de los componentes para poder navegar entre secciones.
 
 ## Tareas de Modificación
 
-- [ ] Corregir animación entre rutas (durante un breve momento se ve el footer).
-- [ ] Mejorar lazyload de imágenes. Optimizar para WebP.
+- [ ] Mejorar lazyload & @Defer de imágenes.
 - [ ] Corregir la primera aparición del video en la Home. La primera vez no se inicia el video.
-- [ ] Mejorar la velocidad de carga de la página de inicio.
+- [ ] Corregir Bubble-msg apareción en base al viewport en vez de %.
 - [ ] Corregir media query de contact-page.
-- [ ] Cambiar nombres de los IDs entre los dos faq-group para que no se desplieguen ambos.
-- [ ] Optimizar imágenes.
 - [ ] Minificar archivos CSS y JS.
 
 ## Notas Adicionales
