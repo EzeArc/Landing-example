@@ -52,7 +52,8 @@
   text-wrap: pretty;
   color: #fff;
   gap: 1.25rem;
-  font-family: "Tomaso", sans-serif;
+  font-family: "Onest", Tomaso, system-ui, -apple-system, sans-serif;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

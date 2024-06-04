@@ -58,17 +58,17 @@
             "GROW_KIT_ITEMS": [
               {
                 "GROW_KIT_ITEM_HEADER": "Aceite cannabico",
-                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-medical-box-64.png",
+                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-medical-box-64.webp",
                 "GROW_KIT_ITEM_BUTTON": "Consultar"
               },
               {
                 "GROW_KIT_ITEM_HEADER": "Semillas",
-                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-cannabis-64.png",
+                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-cannabis-64.webp",
                 "GROW_KIT_ITEM_BUTTON": "Consultar"
               },
               {
                 "GROW_KIT_ITEM_HEADER": "Flores",
-                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-cannabis-oil-64.png",
+                "GROW_KIT_ITEM_IMAGE": "../../../assets/images/sannar/icons8-cannabis-oil-64.webp",
                 "GROW_KIT_ITEM_BUTTON": "Consultar"
               }
             ]
@@ -85,7 +85,7 @@
                 "Trabajamos con expertos en botánica, medicina y derecho para asegurar prácticas de alta calidad y legalidad, promoviendo una mayor aceptación del cannabis medicinal.",
                 "Apoyamos a pequeños agricultores en prácticas agrícolas sostenibles, contribuyendo al desarrollo económico y social de las comunidades locales."
             ],
-              "INTRO_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-c3oy2uiXXAM-unsplash.jpg"
+              "INTRO_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-c3oy2uiXXAM-unsplash.webp"
             },
             {
               "INTRO_TITLE": "Nuestro Compromiso con la Comunidad",
@@ -93,7 +93,7 @@
                   "Sannar ONG crea un <strong>impacto positivo en la comunidad a través de programas de apoyo y colaboración</strong>. Proporcionamos información y recursos sobre el uso medicinal del cannabis y trabajamos para eliminar el estigma asociado.",
                   "Alianzas con instituciones académicas y de salud nos permiten participar en <strong>investigaciones innovadoras sobre el cannabis medicinal</strong>. Empoderamos a pacientes y familias con alternativas terapéuticas seguras y promovemos políticas públicas que faciliten el acceso al cannabis medicinal y protejan los derechos de los usuarios."
               ],
-              "INTRO_IMAGE": "../../../assets/images/sannar/ryan-lange-BgaGKvYN9MY-unsplash.jpg"
+              "INTRO_IMAGE": "../../../assets/images/sannar/ryan-lange-BgaGKvYN9MY-unsplash.webp"
             }
           ]
         },
@@ -105,19 +105,19 @@
             {
               "CARD_HEADER": "Que es una ONG?",
               "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
-              "CARD_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-Qk2ORz-Dfn8-unsplash.jpg",
+              "CARD_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-Qk2ORz-Dfn8-unsplash.webp",
               "CARD_BUTTON": "Conoce más"
             },
             {
               "CARD_HEADER": "Qué significa REPROCANN?",
               "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
-              "CARD_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-c3oy2uiXXAM-unsplash.jpg",
+              "CARD_IMAGE": "../../../assets/images/sannar/crystalweed-cannabis-c3oy2uiXXAM-unsplash.webp",
               "CARD_BUTTON": "Conoce más"
             },
             {
               "CARD_HEADER": "Fumar / vapear",
               "CARD_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sem sit amet massa aliquet aliquet. Phasellus at ipsum congue urna commodo gravidas",
-              "CARD_IMAGE": "../../../assets/images/sannar/ahmed-zayan-4msfw7Pe1iU-unsplash.jpg",
+              "CARD_IMAGE": "../../../assets/images/sannar/ahmed-zayan-4msfw7Pe1iU-unsplash.webp",
               "CARD_BUTTON": "Conoce más"
             }
           ]}
