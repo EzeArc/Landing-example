@@ -1,18 +1,38 @@
 <nav class="navbar navbar-dark" id="header-nav">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/"><app-sannar-logo class="sannar-logo" /></a>
+    <a class="navbar-brand" routerLink="/home" ariaCurrentWhenActive="page"
+      ><app-sannar-logo class="sannar-logo"
+    /></a>
     <div class="d-flex">
       <ul class="navbar-nav text-center ul-nav-items">
         <li class="nav-item">
-          <a class="nav-link active text__glowing" aria-current="page" href="#"
+          <a
+            class="nav-link active text__glowing"
+            aria-current="page"
+            routerLink="/home"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
             >Home</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link text__glowing" href="/contact">Contact</a>
+          <a
+            class="nav-link text__glowing"
+            routerLink="/contact"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Contact</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link text__glowing" href="/about"> About </a>
+          <a
+            class="nav-link text__glowing"
+            routerLink="/about"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+          >
+            About
+          </a>
           <!-- 
             clase- dropdown(l14) & dropdown-toggle (l16) role="button" data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -87,13 +107,32 @@
         </form>
         <ul class="navbar-nav text-center flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="/home"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a
+              class="nav-link"
+              routerLink="/contact"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              >Contact</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+            <a
+              class="nav-link"
+              routerLink="/about"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              >About</a
+            >
           </li>
           <!-- <li class="nav-item dropdown">
             <a
@@ -119,3 +158,4 @@
     </div>
   </div>
 </nav>
+<router-outlet />

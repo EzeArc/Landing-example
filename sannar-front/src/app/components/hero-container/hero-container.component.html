@@ -10,10 +10,11 @@
       </a>
     </section>
     <video
-      autoplay
-      loop
+      autoplay="autoplay"
       muted
+      loop
       playsinline
+      onloadedmetadata="this.muted = true"
       id="main-video"
       preload="metadata"
       class="video-primary"
@@ -31,7 +32,14 @@
       />
     </video>
   </div>
-  <video class="video-secondary" autoplay loop muted preload="metadata">
+  <video
+    class="video-secondary"
+    autoplay="autoplay"
+    muted
+    loop
+    playsinline
+    onloadedmetadata="this.muted = true"
+  >
     <source
       src="../../../assets/images/sannar/7667044-uhd_3840_2160_30fps.webm"
       type="video/webm"
