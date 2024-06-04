@@ -1,9 +1,9 @@
 <div class="speech-bubble" [ngClass]="{ show: isVisible }">
   <div>
     <p>
-      No olvides consultar la sección de
+      {{ bubbleMessage.BUBBLE_MESSAGE }}
       <br />
-      <a href="faq-section">preguntas frecuentes</a>
+      <a href="faq-section">{{ bubbleMessage.HREF_BUBBLE }}</a>
     </p>
   </div>
 </div>

@@ -1,136 +1,42 @@
 <section class="faq-section">
-  <h2 class="faq-title">Acerca de Sannar ONG</h2>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingOne">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseOne"
-          aria-expanded="true"
-          aria-controls="collapseOne"
+  @for (faqGroupSection of faq.FAQ_GROUP_QUESTIONS; let groupIndex = $index;
+  track faq) {
+  <div class="faq-group-section">
+    <h2 class="faq-title">
+      {{ faqGroupSection.FAQ_HEADER }}
+    </h2>
+    @for (faqSection of faqGroupSection.FAQ_QUESTIONS; let itemIndex = $index;
+    track faqSection) {
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h3
+          class="accordion-header"
+          [id]="'heading' + groupIndex + '-' + itemIndex"
         >
-          ¿Qué es una ONG?
-        </button>
-      </h3>
-      <div
-        id="collapseOne"
-        class="accordion-collapse collapse show"
-        aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample"
-      >
-        <div class="accordion-body">
-          Una ONG es una organización no gubernamental que opera de manera
-          independiente del gobierno y tiene como objetivo principal la
-          promoción de causas sociales, ambientales, humanitarias, entre otras.
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapse' + groupIndex + '-' + itemIndex"
+            aria-expanded="true"
+            [attr.aria-controls]="'collapse' + groupIndex + '-' + itemIndex"
+          >
+            {{ faqSection.QUESTION_TITLE }}
+          </button>
+        </h3>
+        <div
+          [id]="'collapse' + groupIndex + '-' + itemIndex"
+          class="accordion-collapse collapse"
+          [attr.aria-labelledby]="'heading' + groupIndex + '-' + itemIndex"
+          [attr.data-bs-parent]="'#accordionExample'"
+        >
+          <div class="accordion-body">
+            {{ faqSection.QUESTION_DESCRIPTION }}
+          </div>
         </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingTwo">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo"
-          aria-expanded="false"
-          aria-controls="collapseTwo"
-        >
-          ¿Como me hago socio de Sannar?
-        </button>
-      </h3>
-      <div
-        id="collapseTwo"
-        class="accordion-collapse collapse"
-        aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample"
-      >
-        <div class="accordion-body">
-          Para hacerte socio de Sannar, puedes visitar nuestra página web y
-          completar el formulario de inscripción. También puedes acercarte a
-          nuestras oficinas y realizar el proceso en persona.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingThree">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseThree"
-          aria-expanded="false"
-          aria-controls="collapseThree"
-        >
-          ¿Qué beneficios me otorga?
-        </button>
-      </h3>
-      <div
-        id="collapseThree"
-        class="accordion-collapse collapse"
-        aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample"
-      >
-        <div class="accordion-body">
-          Al hacerte socio de Sannar, obtienes acceso a nuestros programas y
-          servicios, descuentos en eventos y talleres, y la oportunidad de
-          participar en actividades exclusivas para miembros.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingFour">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseFour"
-          aria-expanded="false"
-          aria-controls="collapseFour"
-        >
-          ¿Cuáles son los beneficios del Aceite Cannabico?
-        </button>
-      </h3>
-      <div
-        id="collapseFour"
-        class="accordion-collapse collapse"
-        aria-labelledby="headingFour"
-        data-bs-parent="#accordionExample"
-      >
-        <div class="accordion-body">
-          El aceite cannábico puede proporcionar alivio para una variedad de
-          condiciones médicas, incluyendo dolor crónico, ansiedad, y epilepsia.
-          Es importante consultar con un profesional de la salud antes de
-          comenzar su uso.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingFive">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseFive"
-          aria-expanded="false"
-          aria-controls="collapseFive"
-        >
-          ¿Qué es el REPROCANN?
-        </button>
-      </h3>
-      <div
-        id="collapseFive"
-        class="accordion-collapse collapse"
-        aria-labelledby="headingFive"
-        data-bs-parent="#accordionExample"
-      >
-        <div class="accordion-body">
-          El REPROCANN es el Registro del Programa de Cannabis del Ministerio de
-          Salud, que permite a los pacientes acceder legalmente a productos de
-          cannabis para uso medicinal.
-        </div>
-      </div>
-    </div>
+    }
   </div>
+  }
 </section>

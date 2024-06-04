@@ -130,7 +130,7 @@
         "HERO_BUTTON": "",
         "SECTIONS": [
         {
-          "TYPE": "formIntro",
+          "TYPE": "formSection",
           "CONTENT": {
             "FORM_HEADER": "Contacta con nosotros!",
             "FORM_SUBTITLE": "No dudes en consultarnos.",
@@ -141,39 +141,46 @@
           "TYPE": "infoBubble",
           "CONTENT": {
             "BUBBLE_MESSAGE": "No olvides consultar la sección de",
-            "HREF_BUBBLE": "<a href='faq-section'>preguntas frecuentes</a>"
+            "HREF_BUBBLE": "preguntas frecuentes"
           }
         },
         {
           "TYPE": "faq",
-          "CONTENT": [
+          "CONTENT":
             {
-              "FAQ_HEADER": "Acerca de Sannar ONG",
-              "QUESTIONS": [
+              "FAQ_GROUP_QUESTIONS": [
                 {
-                  "QUESITON_TITLE": "¿Qué es una ONG?",
-                  "QUESTION_DESCRIPTION": "Una ONG es una organización no gubernamental que opera de manera independiente del gobierno y tiene como objetivo principal la promoción de causas sociales, ambientales, humanitarias, entre otras."
+                  "FAQ_HEADER": "Acerca de Sannar ONG",
+                  "FAQ_QUESTIONS": [
+                    {
+                      "QUESTION_TITLE": "¿Qué es una ONG?",
+                      "QUESTION_DESCRIPTION": "Una ONG es una organización no gubernamental que opera de manera independiente del gobierno y tiene como objetivo principal la promoción de causas sociales, ambientales, humanitarias, entre otras."
+                    },
+                    {
+                      "QUESTION_TITLE": "¿Cómo me hago socio de Sannar?",
+                      "QUESTION_DESCRIPTION": "Para hacerte socio de Sannar, puedes visitar nuestra página web y completar el formulario de inscripción. También puedes acercarte a nuestras oficinas y realizar el proceso en persona."
+                    },
+                    {
+                      "QUESTION_TITLE": "¿Qué beneficios me otorga?",
+                      "QUESTION_DESCRIPTION": "Al hacerte socio de Sannar, obtienes acceso a nuestros programas y servicios, descuentos en eventos y talleres, y la oportunidad de participar en actividades exclusivas para miembros."
+                    }
+                  ]
                 },
                 {
-                  "QUESITON_TITLE": "¿Como me hago socio de Sannar?",
-                  "QUESTION_DESCRIPTION": "Para hacerte socio de Sannar, puedes visitar nuestra página web y completar el formulario de inscripción. También puedes acercarte a nuestras oficinas y realizar el proceso en persona."
-                },
-                {
-                  "QUESITON_TITLE": "¿Qué beneficios me otorga?",
-                  "QUESTION_DESCRIPTION": "Al hacerte socio de Sannar, obtienes acceso a nuestros programas y servicios, descuentos en eventos y talleres, y la oportunidad de participar en actividades exclusivas para miembros."
-                },
-                {
-                  "QUESITON_TITLE": "¿Cuáles son los beneficios del Aceite Cannabico?",
-                  "QUESTION_DESCRIPTION": "El aceite cannábico puede proporcionar alivio para una variedad de condiciones médicas, incluyendo dolor crónico, ansiedad, y epilepsia. Es importante consultar con un profesional de la salud antes de comenzar su uso."
-                },
-                {
-                  "QUESITON_TITLE": "¿Qué es el REPROCANN?",
-                  "QUESTION_DESCRIPTION": "El REPROCANN es el Registro del Programa de Cannabis del Ministerio de Salud, que permite a los pacientes acceder legalmente a productos de cannabis para uso medicinal."
+                  "FAQ_HEADER": "Acerca de REPROCANN",
+                  "FAQ_QUESTIONS": [
+                    {
+                      "QUESTION_TITLE": "¿Cuáles son los beneficios del Aceite Cannabico?",
+                      "QUESTION_DESCRIPTION": "El aceite cannábico puede proporcionar alivio para una variedad de condiciones médicas, incluyendo dolor crónico, ansiedad, y epilepsia. Es importante consultar con un profesional de la salud antes de comenzar su uso."
+                    },
+                    {
+                      "QUESTION_TITLE": "¿Qué es el REPROCANN?",
+                      "QUESTION_DESCRIPTION": "El REPROCANN es el Registro del Programa de Cannabis del Ministerio de Salud, que permite a los pacientes acceder legalmente a productos de cannabis para uso medicinal."
+                    }
+                  ]
                 }
-
               ]
             }
-          ]
         }
       ]
     }

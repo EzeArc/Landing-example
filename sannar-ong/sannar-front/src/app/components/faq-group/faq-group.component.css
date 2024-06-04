@@ -1,5 +1,8 @@
 .faq-section {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  gap: 1rem;
   text-align: center;
   box-sizing: border-box;
   padding: 2rem;
@@ -21,6 +24,9 @@
 .accordion {
   filter: drop-shadow(3px 3px 8px #00000077);
   border: none;
+  width: 100%; /* Puedes ajustar el valor según tus necesidades */
+  max-width: 500px; /* Fija un ancho máximo para el acordeón */
+  margin: 0 auto; /* Centra el acordeón en la página */
 }
 
 .accordion-button {
@@ -30,7 +36,8 @@
   border: none;
   padding: 1rem;
   text-align: left;
-  width: 100%;
+  width: 100%; /* Asegura que los botones del acordeón llenen todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho total */
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   position: relative;
@@ -58,6 +65,7 @@
   background-color: #00fc6911;
   border: none;
   margin-bottom: 1rem;
+  width: 100%; /* Asegura que los elementos del acordeón llenen todo el ancho del contenedor */
 }
 
 .accordion-body {
@@ -68,6 +76,8 @@
   border: 1px solid rgba(209, 213, 219, 0.3);
   padding: 1rem;
   text-align: left;
+  width: 100%; /* Asegura que el cuerpo del acordeón llene todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho total */
 }
 
 @media (max-width: 768px) {

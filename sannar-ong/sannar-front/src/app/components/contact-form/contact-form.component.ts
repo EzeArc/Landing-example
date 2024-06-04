@@ -6,6 +6,7 @@ import { MatIcon} from '@angular/material/icon'
 import { MatInput} from '@angular/material/input'
 import { WeedWalkingComponent } from '../weed-walking/weed-walking.component';
 import { BubbleMsgComponent } from '../bubble-msg/bubble-msg.component';
+import * as data from '../../../assets/data/content.json'
 
 @Component({
   selector: 'app-contact-form',
@@ -16,4 +17,5 @@ import { BubbleMsgComponent } from '../bubble-msg/bubble-msg.component';
 })
 export class ContactFormComponent {
 
+  formSection:any= data.CONTACT_PAGE.SECTIONS.find(section => section.TYPE === 'formSection')?.CONTENT;
 }
