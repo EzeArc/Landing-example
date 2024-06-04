@@ -13,6 +13,6 @@ import { WeedLoaderComponent } from '../../shared/weed-loader/weed-loader.compon
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
-export class HomePageComponent {
+export default class HomePageComponent {
 
 }

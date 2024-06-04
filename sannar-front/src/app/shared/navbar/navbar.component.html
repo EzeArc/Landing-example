@@ -7,7 +7,7 @@
       <ul class="navbar-nav text-center ul-nav-items">
         <li class="nav-item">
           <a
-            class="nav-link active text__glowing"
+            class="nav-link text__glowing"
             aria-current="page"
             routerLink="/home"
             routerLinkActive="active"
@@ -33,17 +33,6 @@
           >
             About
           </a>
-          <!-- 
-            clase- dropdown(l14) & dropdown-toggle (l16) role="button" data-bs-toggle="dropdown"
-            aria-expanded="false"
-            <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Asociate</a></li>
-            <li><a class="dropdown-item" href="#">REPROCANN</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="#">Sannar.ong</a></li>
-          </ul> -->
         </li>
       </ul>
     </div>
@@ -82,7 +71,10 @@
     >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-          <a class="navbar-brand" href="/"
+          <a
+            class="navbar-brand"
+            routerLink="/home"
+            ariaCurrentWhenActive="page"
             ><app-sannar-logo class="sannar-logo"
           /></a>
         </h5>
@@ -108,7 +100,7 @@
         <ul class="navbar-nav text-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a
-              class="nav-link active"
+              class="nav-link"
               aria-current="page"
               routerLink="/home"
               routerLinkActive="active"
@@ -134,25 +126,6 @@
               >About</a
             >
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="/about"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Asociate</a></li>
-              <li><a class="dropdown-item" href="#">REPROCANN</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Sannar.ong</a></li>
-            </ul>
-          </li> -->
         </ul>
       </div>
     </div>
