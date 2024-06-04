@@ -38,6 +38,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .heading {
+    line-height: 3rem;
+    text-wrap: pretty;
+  }
+}
+
 .image-primary {
   position: absolute;
   height: 100%;
