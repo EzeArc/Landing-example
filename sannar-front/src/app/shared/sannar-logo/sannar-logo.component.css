@@ -1,7 +1,3 @@
-.sannar-logo {
-  width: 150px;
-}
-
 @media only screen and (max-width: 600px) {
   .sannar-logo {
     width: 130px;
