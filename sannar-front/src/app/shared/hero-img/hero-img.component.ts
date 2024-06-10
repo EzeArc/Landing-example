@@ -1,9 +1,10 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero-img',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './hero-img.component.html',
   styleUrl: './hero-img.component.css'
 })
