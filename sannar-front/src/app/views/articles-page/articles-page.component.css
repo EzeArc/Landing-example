@@ -1,0 +1,44 @@
+/* Estilos para la sección de categorías */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button-tag {
+  padding: 10px 15px;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-tag:hover {
+  background-color: #dce4ff;
+}
+
+/* Estilos para la sección de artículos */
+.articles-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}

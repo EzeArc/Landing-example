@@ -1,0 +1,18 @@
+<section>
+  <h1>Artículos por categoria</h1>
+  <div class="category-container">
+    @for (category of categories; track category) {
+    <button class="button-tag">{{ category }}</button>
+    }
+  </div>
+</section>
+<main class="articles-section">
+  @for (article of articles; track $index) {
+  <app-article
+    [title]="article.titulo"
+    [image]="article.imagen"
+    [resume]="article.resumen"
+    [tags]="article.tags"
+  />
+  }
+</main>

@@ -1,0 +1,95 @@
+{
+    "ARTICULOS": {
+      "ACEITE": [
+        {
+          "titulo": "Los Beneficios del Aceite de CBD en el Tratamiento de la Ansiedad",
+          "autor": "María Pérez",
+          "fecha": "2024-05-01",
+          "resumen": "El aceite de CBD ha demostrado ser efectivo en el tratamiento de la ansiedad, proporcionando una alternativa natural a los medicamentos tradicionales.",
+          "imagen": "https://images.unsplash.com/flagged/photo-1564833125683-b9fde4516274?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["CBD", "Ansiedad", "Medicina Natural", "Aceite Cannábico"]
+        },
+        {
+          "titulo": "Aceite de Cannabis: Usos Terapéuticos y Dosificación",
+          "autor": "Juan Gómez",
+          "fecha": "2024-04-15",
+          "resumen": "El aceite de cannabis se utiliza para diversas condiciones médicas. Este artículo explora sus usos y la dosificación adecuada.",
+          "imagen": "https://images.unsplash.com/photo-1600753230816-94fc22e82859?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Cannabis", "Terapia", "Dosificación", "Aceite Cannábico"]
+        }
+      ],
+      "PLANTA_DE_CANNABIS": [
+        {
+          "titulo": "Cultivo de Cannabis: Guía para Principiantes",
+          "autor": "Laura Martínez",
+          "fecha": "2024-03-20",
+          "resumen": "Una guía completa para aquellos que desean comenzar a cultivar su propia planta de cannabis en casa, incluyendo consejos sobre el cuidado y mantenimiento.",
+          "imagen": "../../../assets/images/sannar/crystalweed-cannabis-Qk2ORz-Dfn8-unsplash.webp",
+          "tags": ["Cultivo", "Cannabis", "Guía", "Principiantes"]
+        },
+        {
+          "titulo": "Propiedades Medicinales de la Planta de Cannabis",
+          "autor": "Carlos Rodríguez",
+          "fecha": "2024-02-10",
+          "resumen": "La planta de cannabis tiene varias propiedades medicinales que la hacen útil en el tratamiento de diversas enfermedades.",
+          "imagen": "../../../assets/images/sannar/roberto-valdivia-HrRm_V-V0sM-unsplash.webp",
+          "tags": ["Medicinal", "Propiedades", "Planta de Cannabis", "Salud"]
+        }
+      ],
+      "PRODUCTOS_COMESTIBLES": [
+        {
+          "titulo": "Comestibles de Cannabis: Una Alternativa a la Inhalación",
+          "autor": "Ana López",
+          "fecha": "2024-01-25",
+          "resumen": "Los comestibles de cannabis ofrecen una alternativa para aquellos que prefieren no fumar o vaporizar. Aquí se discuten sus beneficios y consideraciones.",
+          "imagen": "https://images.unsplash.com/photo-1560999448-1288f5c62468?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Comestibles", "Cannabis", "Alternativa", "Inhalación"]
+        },
+        {
+          "titulo": "Recetas con Cannabis: Cómo Preparar tus Propios Comestibles",
+          "autor": "Roberto Sánchez",
+          "fecha": "2023-12-18",
+          "resumen": "Aprende a preparar tus propios comestibles de cannabis con estas sencillas recetas que maximizan los beneficios terapéuticos.",
+          "imagen": "https://images.unsplash.com/photo-1549494093-a565e02bcfaa?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Recetas", "Cannabis", "Comestibles", "Terapéuticos"]
+        }
+      ],
+      "VAPORIZACION": [
+        {
+          "titulo": "Vaporización de Cannabis: Ventajas y Desventajas",
+          "autor": "Marta Fernández",
+          "fecha": "2023-11-05",
+          "resumen": "La vaporización de cannabis es una forma popular de consumo. Este artículo explora sus ventajas y desventajas en comparación con otras formas de consumo.",
+          "imagen": "https://images.unsplash.com/photo-1606753232069-d641f57b0641?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Vaporización", "Cannabis", "Ventajas", "Desventajas"]
+        },
+        {
+          "titulo": "Cómo Elegir el Mejor Vaporizador para Cannabis",
+          "autor": "Diego Torres",
+          "fecha": "2023-10-22",
+          "resumen": "Elegir el vaporizador adecuado puede ser difícil. Aquí te ofrecemos una guía para seleccionar el mejor vaporizador de cannabis según tus necesidades.",
+          "imagen": "https://images.unsplash.com/photo-1666402667102-a647c86ee4ee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Vaporizador", "Cannabis", "Guía", "Selección"]
+        }
+      ],
+      "CREMAS_Y_TOPICOS": [
+        {
+          "titulo": "Cremas de Cannabis: Alivio del Dolor y la Inflamación",
+          "autor": "Lucía Jiménez",
+          "fecha": "2023-09-15",
+          "resumen": "Las cremas de cannabis son efectivas para aliviar el dolor y la inflamación. Descubre cómo funcionan y cómo se aplican.",
+          "imagen": "https://images.unsplash.com/photo-1605040011513-b32585c718a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Cremas", "Cannabis", "Dolor", "Inflamación"]
+        },
+        {
+          "titulo": "Uso de Tópicos de Cannabis en el Tratamiento de Enfermedades de la Piel",
+          "autor": "Pedro Álvarez",
+          "fecha": "2023-08-10",
+          "resumen": "Los tópicos de cannabis pueden ser útiles en el tratamiento de diversas enfermedades de la piel, proporcionando alivio y mejorando la salud cutánea.",
+          "imagen": "https://images.unsplash.com/photo-1605039982749-c2fe1dd2a588?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "tags": ["Tópicos", "Cannabis", "Piel", "Tratamiento"]
+        }
+      ]
+    }
+  }
+  

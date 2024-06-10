@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="item">
+    <div class="article">
+      <img
+        class="article__img"
+        [src]="image"
+        alt="Green Forests"
+        loading="lazy"
+      />
+      <div class="article__content">
+        <h2 class="article__header">{{ title }}</h2>
+        <p class="article__text">{{ resume }}</p>
+        @for (tag of tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </div>
+      <button class="article__btn">Leer más<span>&rarr;</span></button>
+    </div>
+  </div>
+</div>
