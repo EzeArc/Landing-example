@@ -7,11 +7,12 @@
 ## Tareas de Modificación
 
 - [ ] Mejorar lazyload & @Defer de imágenes.
-- [ ] Los elementos de imagen no tienen width y height explícitos img.logoSannar - iconSearch - iconUser - iconBrand-whatsapp/insta/fb
 - [ ] Corregir la primera aparición del video en la Home. La primera vez no se inicia el video.
 - [ ] Corregir Bubble-msg apareción en base al viewport en vez de %.
 - [ ] Corregir media query de contact-page.
 - [ ] Minificar archivos CSS y JS.
+- [ ] Mejorar la vista de la Article-page.
+- [ ] Modificar la vista de la Article-details.
 
 ## Notas Adicionales
 

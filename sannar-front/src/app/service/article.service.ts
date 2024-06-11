@@ -1,31 +1,47 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { inject, Injectable } from '@angular/core';
+import { map, Observable, of } from 'rxjs';
+import { Article, ArticlesResponse } from '../models/article.model';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root'})
 export class ArticleService {
   private jsonUrl = 'assets/data/article.json'; // Asegúrate de que la ruta sea correcta
 
-  constructor(private http: HttpClient) { }
+  private articlesCache: Article[] | null = null;
+  private categoriesCache: string[] | null = null;
+
+  private readonly http= inject(HttpClient)
 
   getCategories(): Observable<string[]> {
-    return this.http.get<any>(this.jsonUrl).pipe(
-      map(data => Object.keys(data.ARTICULOS))
+    if (this.categoriesCache) {
+      return of(this.categoriesCache);
+    }
+    return this.http.get<ArticlesResponse>(this.jsonUrl).pipe(
+      map(data => {
+        const categories = Object.keys(data.ARTICULOS);
+        this.categoriesCache = categories;
+        return categories;
+      })
     );
   }
 
-  getAllArticles(): Observable<any[]> {
-    return this.http.get<any>(this.jsonUrl).pipe(
+  getAllArticles(): Observable<Article[]> {
+    if (this.articlesCache) {
+      return of(this.articlesCache);
+    }
+    return this.http.get<ArticlesResponse>(this.jsonUrl).pipe(
       map(data => {
-        const articles = [];
-        for (const category of Object.keys(data.ARTICULOS)) {
-          articles.push(...data.ARTICULOS[category]);
-        }
+        const articles = ([] as Article[]).concat(...Object.values(data.ARTICULOS));
+        this.articlesCache = articles;
         return articles;
       })
     );
   }
 
+  getArticlesByCategory(categoryKey: string): Observable<Article[]> {
+    return this.http.get<ArticlesResponse>(this.jsonUrl).pipe(
+      map(response => response.ARTICULOS[categoryKey] || [])
+    );
+  }
 }
+

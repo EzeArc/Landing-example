@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ArticleComponent } from '../../components/article/article.component';
 import { ArticleService } from '../../service/article.service';
+import { Article } from '../../models/article.model';
 
 
 @Component({
@@ -13,18 +14,34 @@ import { ArticleService } from '../../service/article.service';
 export default class ArticlesPageComponent implements OnInit{
 
   categories: string[] = [];
-  articles: any[] = [];
+  articles: Article[] = [];
+  filteredArticles: Article[] = [];
+  currentCategory: string | null = null;
 
-  constructor(private articleService: ArticleService) { }
+  private readonly articleService= inject(ArticleService)
 
   ngOnInit(): void {
-    this.articleService.getCategories().subscribe(data => {
-      this.categories = data;
+    this.articleService.getCategories().subscribe(categories => {
+      this.categories = categories;
     });
-  
-    this.articleService.getAllArticles().subscribe(data => {
-      this.articles = data;
+    this.articleService.getAllArticles().subscribe(articles => {
+      this.articles = this.filteredArticles = articles;
     });
   }
 
+  onCategorySelected(category: string): void {
+    this.currentCategory = category;
+    this.articleService.getArticlesByCategory(category).subscribe(articles => {
+      this.filteredArticles = articles;
+    });
+  }
+
+  // trackByArticles(index: number, article: Article): any {
+  //   return article.titulo; // Utiliza el título como identificador único si es único
+  // }
+
+  // trackByCategory(index: number, category: string): any {
+  //   return category; // La categoría misma puede ser el identificador único
+  // }
 }
+

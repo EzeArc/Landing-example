@@ -4,7 +4,7 @@
       <img
         class="article__img"
         [src]="image"
-        alt="Green Forests"
+        alt="{{ title }}"
         loading="lazy"
       />
       <div class="article__content">
@@ -14,7 +14,9 @@
         <span class="article-tag">{{ tag }}</span>
         }
       </div>
-      <button class="article__btn">Leer más<span>&rarr;</span></button>
+      <a class="article__btn" [routerLink]="['/article-details', title]"
+        >Leer más<span>&rarr;</span></a
+      >
     </div>
   </div>
 </div>

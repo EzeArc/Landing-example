@@ -2,12 +2,14 @@
   <h1>Artículos por categoria</h1>
   <div class="category-container">
     @for (category of categories; track category) {
-    <button class="button-tag">{{ category }}</button>
+    <button class="button-tag" (click)="onCategorySelected(category)">
+      {{ category }}
+    </button>
     }
   </div>
 </section>
 <main class="articles-section">
-  @for (article of articles; track $index) {
+  @for (article of filteredArticles; track $index) {
   <app-article
     [title]="article.titulo"
     [image]="article.imagen"
