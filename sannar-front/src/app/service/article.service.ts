@@ -43,5 +43,11 @@ export class ArticleService {
       map(response => response.ARTICULOS[categoryKey] || [])
     );
   }
+
+  getRecentArticles(): Observable<Article[]> {
+    return this.getAllArticles().pipe(
+      map(articles => articles.slice(-4)) // Obtén los últimos 4 artículos
+    );
+  }
 }
 

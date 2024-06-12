@@ -3,6 +3,7 @@
 ## Tareas de Creación
 
 - [ ] Crear rutas hijas de los componentes para poder navegar entre secciones.
+- [ ] Crear plantilla html de la pagina de article details con section de articulos relacionados como miniaturas.
 
 ## Tareas de Modificación
 

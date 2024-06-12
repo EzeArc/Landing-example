@@ -1,0 +1,98 @@
+<section class="grid">
+  <article class="first-article">
+    <img
+      class="article__img"
+      [src]="recentArticles[0].imagen"
+      alt="{{ recentArticles[0].titulo }}"
+      loading="lazy"
+    />
+    <section class="article__section">
+      <header class="article__content">
+        <h2 class="article__header">{{ recentArticles[0].titulo }}</h2>
+        <p class="article__text">{{ recentArticles[0].resumen }}</p>
+        @for (tag of recentArticles[0].tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </header>
+      <footer>
+        <a
+          class="article__btn"
+          [routerLink]="['/article-details', recentArticles[0].titulo]"
+          >Leer más<span>&rarr;</span></a
+        >
+      </footer>
+    </section>
+  </article>
+  <article class="second-article">
+    <img
+      class="article__1"
+      [src]="recentArticles[1].imagen"
+      alt="{{ recentArticles[1].titulo }}"
+      loading="lazy"
+    />
+    <section class="article__section">
+      <header class="article__content">
+        <h2 class="article__header">{{ recentArticles[1].titulo }}</h2>
+        <p class="article__text">{{ recentArticles[1].resumen }}</p>
+        @for (tag of recentArticles[1].tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </header>
+      <footer>
+        <a
+          class="article__btn"
+          [routerLink]="['/article-details', recentArticles[1].titulo]"
+          >Leer más<span>&rarr;</span></a
+        >
+      </footer>
+    </section>
+  </article>
+  <article class="third-article">
+    <img
+      class="article__img"
+      [src]="recentArticles[2].imagen"
+      alt="{{ recentArticles[2].titulo }}"
+      loading="lazy"
+    />
+    <section class="article__section">
+      <header class="article__content">
+        <h2 class="article__header">{{ recentArticles[2].titulo }}</h2>
+        <p class="article__text">{{ recentArticles[2].resumen }}</p>
+        @for (tag of recentArticles[2].tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </header>
+      <footer>
+        <a
+          class="article__btn"
+          [routerLink]="['/article-details', recentArticles[2].titulo]"
+          >Leer más<span>&rarr;</span></a
+        >
+      </footer>
+    </section>
+  </article>
+  <article class="fourth-article">
+    <img
+      class="article__img"
+      [src]="recentArticles[3].imagen"
+      alt="{{ recentArticles[3].titulo }}"
+      loading="lazy"
+    />
+    <section class="article__section">
+      <header class="article__content">
+        <h2 class="article__header">{{ recentArticles[3].titulo }}</h2>
+        <p class="article__text">{{ recentArticles[3].resumen }}</p>
+        @for (tag of recentArticles[3].tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </header>
+      <footer>
+        <a
+          class="article__btn"
+          [routerLink]="['/article-details', recentArticles[3].titulo]"
+          >Leer más<span>&rarr;</span></a
+        >
+      </footer>
+    </section>
+  </article>
+</section>

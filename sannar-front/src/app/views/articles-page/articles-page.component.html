@@ -1,4 +1,11 @@
-<section>
+<app-hero-img [title]="title" />
+
+<section class="last-articles">
+  <h2>Últimos artículos</h2>
+  <app-article-grid />
+</section>
+
+<section class="categories">
   <h1>Artículos por categoria</h1>
   <div class="category-container">
     @for (category of categories; track category) {
@@ -8,13 +15,19 @@
     }
   </div>
 </section>
-<main class="articles-section">
-  @for (article of filteredArticles; track $index) {
-  <app-article
-    [title]="article.titulo"
-    [image]="article.imagen"
-    [resume]="article.resumen"
-    [tags]="article.tags"
-  />
-  }
-</main>
+
+<section class="all-articles">
+  <h2>Todos los artículos</h2>
+
+  <main class="articles-section">
+    @for (article of filteredArticles; track $index) {
+    <app-article
+      [title]="article.titulo"
+      [image]="article.imagen"
+      [resume]="article.resumen"
+      [tags]="article.tags"
+    />
+    }
+  </main>
+  <app-pagination />
+</section>
