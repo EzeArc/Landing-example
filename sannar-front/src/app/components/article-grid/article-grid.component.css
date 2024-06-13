@@ -9,173 +9,98 @@
 }
 
 article {
+  display: flex;
   border-radius: 8px 0px;
   padding: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
   text-align: left;
+  padding: 1rem;
 }
 
-/* Estilos para cada elemento específico */
-.grid > article:nth-child(1) {
+article:nth-child(1) {
   grid-column: span 1;
   grid-row: span 2;
 }
 
-.grid > article:nth-child(2) {
+article:nth-child(2),
+article:nth-child(3) {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.grid > article:nth-child(3) {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
-.grid > article:nth-child(4) {
+article:nth-child(4) {
   grid-column: span 2;
   grid-row: span 1;
 }
 
-.article-0 {
+.article__img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.article__section {
+  flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.article__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 4px;
+  padding: 2px;
+}
+
+.article__text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-height: 4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-tag {
+  margin: 2px 2px;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.article-0 {
   flex-direction: column;
-  padding: 1rem;
   & img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 16/9;
   }
+}
 
-  & .article__section {
-    flex: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap: 1rem;
-    padding: 2px;
-  }
-
+.article-1,
+.article-2,
+.article-3 {
+  flex-direction: row;
   & .article__content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap: 4px;
-    padding: 2px;
-  }
-
-  & .article__text {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    max-height: 4em; /* 4 líneas con altura de línea de 1.4 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  & .article-tag {
-    margin: 2px 2px;
-    background-color: #f0f0f0;
-    padding: 4px 8px; /* Ajusta el padding para que los tags tengan un aspecto más uniforme */
-    font-size: 0.7rem;
-    white-space: nowrap; /* Evita que el texto del tag se divida en varias líneas */
+    margin: 0;
   }
 }
 
 .article-1,
 .article-2 {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  & img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-  }
-  & .article__section {
-    flex: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  & .article__content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 2px;
-  }
-
   & .article__text {
     font-size: 0.9rem;
-    line-height: 1.4;
-    max-height: 4em; /* 4 líneas con altura de línea de 1.4 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .article-tag {
-    margin: 2px 2px;
-    background-color: #f0f0f0;
-    padding: 4px 8px; /* Ajusta el padding para que los tags tengan un aspecto más uniforme */
-    font-size: 0.7rem;
-    white-space: nowrap; /* Evita que el texto del tag se divida en varias líneas */
   }
 }
 
-.article-3 {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  & img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-  }
-
-  & .article__section {
-    flex: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  & .article__content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 2px;
-  }
-
-  & .article__text {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    max-height: 4em; /* 4 líneas con altura de línea de 1.4 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  & .article-tag {
-    margin: 2px 2px;
-    background-color: #f0f0f0;
-    padding: 4px 8px; /* Ajusta el padding para que los tags tengan un aspecto más uniforme */
-    font-size: 0.7rem;
-    white-space: nowrap; /* Evita que el texto del tag se divida en varias líneas */
-  }
-}
-
-/* Estilos para el botón del artículo */
 .article__btn {
   display: block;
   width: 100%;

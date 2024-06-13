@@ -25,9 +25,9 @@
 .accordion {
   filter: drop-shadow(3px 3px 8px #00000077);
   border: none;
-  width: 100%; /* Puedes ajustar el valor según tus necesidades */
-  max-width: 500px; /* Fija un ancho máximo para el acordeón */
-  margin: 0 auto; /* Centra el acordeón en la página */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .accordion-button {
@@ -37,20 +37,20 @@
   border: none;
   padding: 1rem;
   text-align: left;
-  width: 100%; /* Asegura que los botones del acordeón llenen todo el ancho del contenedor */
-  box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho total */
+  width: 100%;
+  box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   position: relative;
 }
 
 .accordion-button::after {
-  color: #ffffff; /* Cambia el color del icono */
+  color: #ffffff;
   transition: color 0.3s ease-in-out;
 }
 
 .accordion-button:not(.collapsed)::after {
-  color: #0f9468; /* Cambia el color del icono cuando el acordeón está expandido */
+  color: #0f9468;
 }
 
 .accordion-button:not(.collapsed) {

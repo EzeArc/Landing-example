@@ -1,21 +1,18 @@
-/* Estilos para el contenedor principal */
 .container {
   display: flex;
   gap: 10px;
 }
 
-/* Estilos para cada artículo individual */
 .item {
-  flex: 0 0 300px; /* Establece un ancho fijo para las tarjetas */
-  max-width: 100%; /* Asegura que la tarjeta no exceda el ancho del contenedor */
+  flex: 0 0 300px;
+  max-width: 100%;
   padding: auto;
 }
 
-/* Estilos para el artículo */
 .article {
   display: flex;
-  flex-direction: column; /* Organiza el contenido de la tarjeta en una columna */
-  height: 100%; /* Ocupa todo el alto disponible */
+  flex-direction: column;
+  height: 100%;
   border: 1px solid #ddd;
   padding: 20px;
   background-color: #fff;
@@ -23,18 +20,16 @@
   overflow: hidden;
 }
 
-/* Estilos para la imagen del artículo */
 .article__img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  object-position: center; /* Centra la imagen dentro del elemento */
-  aspect-ratio: 16 / 9; /* Mantiene una relación de aspecto constante */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16 / 9;
 }
 
-/* Estilos para el contenido del artículo */
 .article__content {
-  flex: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,38 +40,34 @@
   padding: 2px;
 }
 
-/* Estilos para el encabezado del artículo */
 .article__header {
   font-size: 1.1rem;
   line-height: 1.4;
   margin: 0;
-  max-height: 2.8em; /* Limita la altura del título a dos líneas */
+  max-height: 2.8em;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limita a dos líneas de texto */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-/* Estilos para el texto del artículo */
 .article__text {
   font-size: 0.9rem;
   line-height: 1.4;
-  max-height: 4em; /* 4 líneas con altura de línea de 1.4 */
+  max-height: 4em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Estilos para los tags del artículo */
 .article-tag {
   margin: 2px 2px;
   background-color: #f0f0f0;
-  padding: 4px 8px; /* Ajusta el padding para que los tags tengan un aspecto más uniforme */
+  padding: 4px 8px;
   font-size: 0.7rem;
-  white-space: nowrap; /* Evita que el texto del tag se divida en varias líneas */
+  white-space: nowrap;
 }
 
-/* Estilos para el botón del artículo */
 .article__btn {
   display: block;
   width: 100%;

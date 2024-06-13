@@ -1,5 +1,5 @@
 .container-bg {
-  position: relative; /* Posiciona el contenedor principal relativamente */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -9,17 +9,17 @@
 }
 
 .walking-container {
-  position: absolute; /* Posiciona el contenedor de la caminata absolutamente */
+  position: absolute;
   left: 0;
   top: 50%;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Asegura que los eventos del mouse no interfieran con el formulario */
-  z-index: 1; /* Asegura que el contenedor de la caminata esté detrás del formulario */
+  pointer-events: none;
+  z-index: 1;
 }
 
 .section-style {
-  position: relative; /* Posiciona la sección del formulario relativamente */
+  position: relative;
   height: 500px;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -33,7 +33,7 @@
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 2; /* Asegura que el formulario esté delante del contenedor de la caminata */
+  z-index: 2;
 }
 
 .text-center {
@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: 16px;
   margin-right: 16px;

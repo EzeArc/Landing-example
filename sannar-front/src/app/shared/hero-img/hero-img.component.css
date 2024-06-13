@@ -23,18 +23,18 @@
 }
 
 .heading {
-  font-size: 3rem; /* Default size */
+  font-size: 3rem;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   font-family: "Onest", sans-serif;
-  letter-spacing: 0.2em; /* Widest */
+  letter-spacing: 0.2em;
   font-weight: 700;
 }
 
 @media (min-width: 1024px) {
   .heading {
-    font-size: 4rem; /* lg:text-6xl */
+    font-size: 4rem;
   }
 }
 
@@ -60,11 +60,10 @@
   animation: fade 1s ease-in-out;
   object-fit: cover;
   object-position: center;
-  filter: blur(50px); /* blur-3xl */
+  filter: blur(50px);
   z-index: -40;
 }
 
-/* Keyframes for animation */
 @keyframes fade {
   from {
     opacity: 0;

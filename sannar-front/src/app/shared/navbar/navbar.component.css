@@ -1,4 +1,3 @@
-/*#86c4ad --> #4a9b7a / #55d09a */
 nav {
   background-color: #86c4ad;
   border-color: rgb(229, 231, 235);
@@ -27,7 +26,6 @@ nav {
   padding-inline: 14px;
 }
 
-/* Hover: scale ul-li*/
 .navbar-nav .nav-item .nav-link {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -82,7 +80,6 @@ nav {
   transform: scale(1.1);
 }
 
-/* Estilos Nav off-canvass --> Desplegable*/
 .offcanvas {
   background-color: #86c4ad;
 }
