@@ -1,12 +1,18 @@
 .container {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
 }
 
 .item {
-  flex: 0 0 300px;
+  flex: 0 0 auto;
   max-width: 100%;
-  padding: auto;
+  box-sizing: border-box;
 }
 
 .article {
@@ -18,6 +24,8 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .article__img {
