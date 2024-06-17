@@ -49,5 +49,12 @@ export class ArticleService {
       map(articles => articles.slice(-4)) // Obtén los últimos 4 artículos
     );
   }
+
+  getArticleById(articleId: string): Observable<Article | undefined> {
+    return this.getAllArticles().pipe(
+      map(articles => articles.find(article => article.titulo === articleId))
+    );
+  }
+  
 }
 

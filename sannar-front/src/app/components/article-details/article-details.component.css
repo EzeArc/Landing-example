@@ -1,0 +1,117 @@
+.container-section {
+  display: flex;
+  flex-direction: row;
+  margin: 6rem 2rem;
+  gap: 2rem;
+}
+
+.recent-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  text-align: left;
+}
+
+.h3-title {
+  font-size: 1.5rem;
+}
+
+.article-detail {
+  margin: 2rem;
+  width: 75%;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 2rem 0;
+}
+
+.article__date {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.article__header {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  text-wrap: balance;
+  margin-bottom: 6rem;
+}
+
+.article__author {
+  font-size: 2rem;
+}
+
+.article__resume {
+  font-size: 1.3rem;
+  margin-top: 4rem;
+}
+
+.article__text {
+  font-size: 1.1rem;
+  margin-bottom: 6rem;
+}
+
+.article__description {
+  font-size: 1.7rem;
+}
+
+.tag-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 5rem 0;
+  gap: 0.5rem;
+}
+
+.article-tag {
+  margin: 2px 2px;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.article__btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.article__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.article__btn:hover,
+.article__btn:active {
+  background-color: #dce4ff;
+}
+
+.article__btn:hover span,
+.article__btn:active span {
+  margin-left: 1.5rem;
+}

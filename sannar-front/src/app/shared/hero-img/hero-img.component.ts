@@ -11,4 +11,5 @@ import { Component, Input } from '@angular/core';
 export class HeroImgComponent {
 
   @Input() title: string = '';
+  @Input() imagen: string = '';
 }

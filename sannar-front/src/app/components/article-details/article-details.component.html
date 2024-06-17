@@ -1,1 +1,52 @@
-<p>article-details works!</p>
+<app-hero-img [title]="''" imagen="{{ article.imagen }}" />
+<section class="container-section">
+  <div class="recent-articles">
+    <h3 class="h3-title">Artículos más recientes</h3>
+    @for (article of recentArticles; let articleIndex = $index; track article){
+    <app-article
+      [fecha]="article.fecha"
+      [title]="article.titulo"
+      [image]="article.imagen"
+      [resume]="article.resumen"
+      [tags]="article.tags"
+    />
+    }
+  </div>
+  <main class="article-detail">
+    <div class="article__content">
+      <span class="article__date">{{ article.fecha }}</span>
+      <h2 class="article__header">{{ article.titulo }}</h2>
+      <h3 class="article__author">{{ article.autor }}</h3>
+      <h4 class="article__resume">Resumen:</h4>
+      <p class="article__text">{{ article.resumen }}</p>
+      <p class="article__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        sapiente nulla unde accusantium doloremque ex illo, tempore quo
+        voluptatem repellendus maiores perspiciatis! Cumque ex sed consequatur
+        quos, beatae nulla hic!
+      </p>
+      <p class="article__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        sapiente nulla unde accusantium doloremque ex illo, tempore quo
+        voluptatem repellendus maiores perspiciatis! Cumque ex sed consequatur
+        quos, beatae nulla hic!
+      </p>
+      <p class="article__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        sapiente nulla unde accusantium doloremque ex illo, tempore quo
+        voluptatem repellendus maiores perspiciatis! Cumque ex sed consequatur
+        quos, beatae nulla hic!
+      </p>
+      <div class="tag-section">
+        @for (tag of article.tags; track $index) {
+        <span class="article-tag">{{ tag }}</span>
+        }
+      </div>
+    </div>
+    <div class="btn-section">
+      <a class="article__btn" [routerLink]="['/article']"
+        >Volver a todos los artículos<span>&rarr;</span></a
+      >
+    </div>
+  </main>
+</section>

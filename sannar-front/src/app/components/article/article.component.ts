@@ -14,4 +14,5 @@ export class ArticleComponent {
   @Input({required: true}) image!: string;
   @Input({required: true}) resume!: string;
   @Input({required: true}) tags!: string[];
+  @Input() fecha!: string;
 }
